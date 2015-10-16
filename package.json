@@ -1,0 +1,25 @@
+{
+  "name": "vui-colors",
+  "version": "0.0.1",
+  "description": "Variables for the VUI color palette.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brightspace/valence-ui-colors.git"
+  },
+  "keywords": [
+    "d2l",
+    "valence-ui",
+    "vui"
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/valence-ui-colors/issues"
+  },
+  "homepage": "https://github.com/Brightspace/valence-ui-colors",
+  "dependencies": {},
+  "devDependencies": {}
+}
