@@ -1,0 +1,13 @@
+{
+  "name": "vui-colors",
+  "main": "colors.scss",
+  "license": "Apache-2.0",
+  "ignore": [
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "package.json"
+  ]
+}
