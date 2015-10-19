@@ -1,0 +1,131 @@
+.vui-color-carnelian {
+  background-color: #E57231;
+}
+
+.vui-color-celestine {
+  background-color: #006FBF;
+}
+
+.vui-color-azurite {
+  background-color: #00A4C0;
+}
+
+.vui-color-celestuba {
+  background-color: #1C5295;
+}
+
+.vui-color-cinnabar {
+  background-color: #CD2026;
+}
+
+.vui-color-citrine {
+  background-color: #FFBA59;
+}
+
+.vui-color-olivine {
+  background-color: #46A661;
+}
+
+.vui-color-zircon {
+  background-color: #00BDDD;
+}
+
+.vui-color-celestine-light-1 {
+  background-color: #F2F8FC;
+}
+
+.vui-color-celestine-light-2 {
+  background-color: #99C5E5;
+}
+
+.vui-color-olivine-light-1 {
+  background-color: #ECF6EE;
+}
+
+.vui-color-olivine-light-2 {
+  background-color: #65B57B;
+}
+
+.vui-color-zircon-light-1 {
+  background-color: #DBF5FA;
+}
+
+.vui-color-zircon-light-2 {
+  background-color: #BDEDF5;
+}
+
+.vui-color-ferrite {
+  background-color: #565A5C;
+}
+
+.vui-color-galena {
+  background-color: #7C8695;
+}
+
+.vui-color-gypsum {
+  background-color: #E6EAF0;
+}
+
+.vui-color-pressicus {
+  background-color: #B9C2D0;
+}
+
+.vui-color-regolith {
+  background-color: #F9FAFB;
+}
+
+.vui-color-titanius {
+  background-color: #D3D9E3;
+}
+
+.vui-color-tungsten {
+  background-color: #72777A;
+}
+
+.vui-color-white {
+  background-color: #FFF;
+}
+
+.vui-color-woolonardo {
+  background-color: #F2F3F5;
+}
+
+.vui-gradient-blastica {
+  background: -webkit-linear-gradient(top, #FF389B 0%, #32075B 100%);
+  background: linear-gradient(to bottom, #FF389B 0%, #32075B 100%);
+}
+
+.vui-gradient-buttonic {
+  background: -webkit-linear-gradient(top, #F9FAFB 0%, #E6EAF0 100%);
+  background: linear-gradient(to bottom, #F9FAFB 0%, #E6EAF0 100%);
+}
+
+.vui-gradient-circdawn {
+  background: -webkit-linear-gradient(top, #F5EC5A 0%, #E57231 100%);
+  background: linear-gradient(to bottom, #F5EC5A 0%, #E57231 100%);
+}
+
+.vui-gradient-meglor {
+  background: -webkit-linear-gradient(top, #B9C2D0 0%, #72777A 100%);
+  background: linear-gradient(to bottom, #B9C2D0 0%, #72777A 100%);
+}
+
+.vui-gradient-nautikon {
+  background: -webkit-linear-gradient(top, #00A8DD 0%, #4C3F99 100%);
+  background: linear-gradient(to bottom, #00A8DD 0%, #4C3F99 100%);
+}
+
+.vui-gradient-neptrine {
+  background: -webkit-linear-gradient(top, #D2E830 0%, #00AFAA 100%);
+  background: linear-gradient(to bottom, #D2E830 0%, #00AFAA 100%);
+}
+
+.vui-gradient-tauksigen {
+  background: -webkit-linear-gradient(top, #F5EC5A 0%, #69BE28 100%);
+  background: linear-gradient(to bottom, #F5EC5A 0%, #69BE28 100%);
+}
+
+.vui-gradient-trancition {
+  background: -webkit-linear-gradient(top, #FFF 0%, #F9FAFB 100%);
+  background: linear-gradient(to bottom, #FFF 0%, #F9FAFB 100%);
+}
