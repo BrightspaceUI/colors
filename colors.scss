@@ -11,6 +11,16 @@ $vui-color-citrine: #FFBA59 !default;
 $vui-color-olivine: #46A661 !default;
 $vui-color-zircon: #00BDDD !default;
 
+// tertiary palette (for gradients)
+$vui-color-lurite: #F5EC5A !default;
+$vui-color-panthera: #FF389B !default;
+$vui-color-gravah: #32075B !default;
+$vui-color-saphirella: #00A8DD !default;
+$vui-color-violettine: #4C3F99 !default;
+$vui-color-chartronic: #D2E830 !default;
+$vui-color-deephonica: #00AFAA !default;
+$vui-color-koolaudica: #69BE28 !default;
+
 // the lighter side
 $vui-color-celestine-light-1: #F2F8FC !default;
 $vui-color-celestine-light-2: #99C5E5 !default;
@@ -31,11 +41,11 @@ $vui-color-white: #FFF !default;
 $vui-color-woolonardo: #F2F3F5 !default;
 
 // gradients
-$vui-gradient-blastica: linear-gradient(to bottom, #FF389B 0%, #32075B 100%) !default;
+$vui-gradient-blastica: linear-gradient(to bottom, $vui-color-panthera 0%, $vui-color-gravah 100%) !default;
 $vui-gradient-buttonic: linear-gradient(to bottom, $vui-color-regolith 0%, $vui-color-gypsum 100%) !default;
-$vui-gradient-circdawn: linear-gradient(to bottom, #F5EC5A 0%, #E87511 100%) !default;
+$vui-gradient-circdawn: linear-gradient(to bottom, $vui-color-lurite 0%, $vui-color-carnelian 100%) !default;
 $vui-gradient-meglor: linear-gradient(to bottom, $vui-color-pressicus 0%, $vui-color-tungsten 100%) !default;
-$vui-gradient-nautikon: linear-gradient(to bottom, #00A8DD 0%, #4C3F99 100%) !default;
-$vui-gradient-neptrine: linear-gradient(to bottom, #D2E830 0%, #00AFAA 100%) !default;
-$vui-gradient-tauksigen: linear-gradient(to bottom, #F5EC5A 0%, #69BE28 100%) !default;
+$vui-gradient-nautikon: linear-gradient(to bottom, $vui-color-saphirella 0%, $vui-color-violettine 100%) !default;
+$vui-gradient-neptrine: linear-gradient(to bottom, $vui-color-chartronic 0%, $vui-color-deephonica 100%) !default;
+$vui-gradient-tauksigen: linear-gradient(to bottom, $vui-color-lurite 0%, $vui-color-koolaudica 100%) !default;
 $vui-gradient-trancition: linear-gradient(to bottom, $vui-color-white 0%, $vui-color-regolith 100%) !default;
