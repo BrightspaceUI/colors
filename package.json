@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Variables for the VUI color palette.",
   "scripts": {
+    "build:autoprefix": "postcss --use autoprefixer ./sample/colors.css -o ./sample/colors.css",
+    "build:css": "node-sass --output-style expanded ./sample/colors.css.scss ./sample/colors.css && npm run build:autoprefix",
     "test": "exit 0"
   },
   "repository": {
@@ -21,5 +23,9 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-colors",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "node-sass": "^3.1.1",
+    "postcss-cli": "^1.3.1"
+  }
 }
