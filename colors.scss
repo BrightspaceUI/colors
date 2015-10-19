@@ -29,3 +29,13 @@ $vui-color-titanius: #D3D9E3 !default;
 $vui-color-tungsten: #72777A !default;
 $vui-color-white: #FFF !default;
 $vui-color-woolonardo: #F2F3F5 !default;
+
+// gradients
+$vui-gradient-blastica: linear-gradient(to bottom, #FF389B 0%, #32075B 100%) !default;
+$vui-gradient-buttonic: linear-gradient(to bottom, $vui-color-regolith 0%, $vui-color-gypsum 100%) !default;
+$vui-gradient-circdawn: linear-gradient(to bottom, #F5EC5A 0%, #E87511 100%) !default;
+$vui-gradient-meglor: linear-gradient(to bottom, $vui-color-pressicus 0%, $vui-color-tungsten 100%) !default;
+$vui-gradient-nautikon: linear-gradient(to bottom, #00A8DD 0%, #4C3F99 100%) !default;
+$vui-gradient-neptrine: linear-gradient(to bottom, #D2E830 0%, #00AFAA 100%) !default;
+$vui-gradient-tauksigen: linear-gradient(to bottom, #F5EC5A 0%, #69BE28 100%) !default;
+$vui-gradient-trancition: linear-gradient(to bottom, $vui-color-white 0%, $vui-color-regolith 100%) !default;
