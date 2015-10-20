@@ -90,42 +90,42 @@
   background-color: #F2F3F5;
 }
 
-.vui-gradient-blastica {
+.vui-color-blastica {
   background: -webkit-linear-gradient(top, #FF389B 0%, #32075B 100%);
   background: linear-gradient(to bottom, #FF389B 0%, #32075B 100%);
 }
 
-.vui-gradient-buttonic {
+.vui-color-buttonic {
   background: -webkit-linear-gradient(top, #F9FAFB 0%, #E6EAF0 100%);
   background: linear-gradient(to bottom, #F9FAFB 0%, #E6EAF0 100%);
 }
 
-.vui-gradient-circdawn {
+.vui-color-circdawn {
   background: -webkit-linear-gradient(top, #F5EC5A 0%, #E57231 100%);
   background: linear-gradient(to bottom, #F5EC5A 0%, #E57231 100%);
 }
 
-.vui-gradient-meglor {
+.vui-color-meglor {
   background: -webkit-linear-gradient(top, #B9C2D0 0%, #72777A 100%);
   background: linear-gradient(to bottom, #B9C2D0 0%, #72777A 100%);
 }
 
-.vui-gradient-nautikon {
+.vui-color-nautikon {
   background: -webkit-linear-gradient(top, #00A8DD 0%, #4C3F99 100%);
   background: linear-gradient(to bottom, #00A8DD 0%, #4C3F99 100%);
 }
 
-.vui-gradient-neptrine {
+.vui-color-neptrine {
   background: -webkit-linear-gradient(top, #D2E830 0%, #00AFAA 100%);
   background: linear-gradient(to bottom, #D2E830 0%, #00AFAA 100%);
 }
 
-.vui-gradient-tauksigen {
+.vui-color-tauksigen {
   background: -webkit-linear-gradient(top, #F5EC5A 0%, #69BE28 100%);
   background: linear-gradient(to bottom, #F5EC5A 0%, #69BE28 100%);
 }
 
-.vui-gradient-trancition {
+.vui-color-trancition {
   background: -webkit-linear-gradient(top, #FFF 0%, #F9FAFB 100%);
   background: linear-gradient(to bottom, #FFF 0%, #F9FAFB 100%);
 }
