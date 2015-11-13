@@ -1,11 +1,11 @@
 {
   "name": "vui-colors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Variables for the VUI color palette.",
   "scripts": {
     "build:autoprefix": "postcss --use autoprefixer ./sample/colors.css -o ./sample/colors.css",
     "build:css": "node-sass --output-style expanded ./sample/colors.css.scss ./sample/colors.css && npm run build:autoprefix",
-    "test": "exit 0"
+    "test": "npm run build:css"
   },
   "repository": {
     "type": "git",
