@@ -8,7 +8,6 @@
     ".gitignore",
     ".npmignore",
     ".travis.yml",
-    "package.json",
-    "sample"
+    "package.json"
   ]
 }
