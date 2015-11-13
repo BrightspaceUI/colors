@@ -7,6 +7,31 @@
 
 This component contains Sass variables for the VUI color palette.
 
+## Installation
+
+Install from NPM:
+```shell
+npm install vui-colors
+```
+
+Install from Bower:
+```shell
+bower install vui-colors
+```
+
+## Usage
+
+**Import the variables:**
+
+```scss
+@import 'bower_components/vui-colors/colors.scss'; // or...
+
+@import "node_modules/vui-colors/colors.scss";
+```
+
+Then use the [color variables](https://github.com/Brightspace/valence-ui-colors/blob/master/colors.scss) as needed.
+
+
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 #### Coding styles
