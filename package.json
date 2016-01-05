@@ -1,6 +1,6 @@
 {
   "name": "vui-colors",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Variables for the VUI color palette.",
   "scripts": {
     "build:autoprefix": "postcss --use autoprefixer ./sample/colors.css -o ./sample/colors.css",
