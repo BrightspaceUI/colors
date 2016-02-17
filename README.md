@@ -5,36 +5,44 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains Sass variables for the VUI color palette.
+This component contains [Sass variables](http://sass-lang.com/) for the VUI color palette.
+
+For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 ## Installation
 
-Install from NPM:
-```shell
-npm install vui-colors
-```
-
-Install from Bower:
+`vui-colors` can be installed from [Bower][bower-url]:
 ```shell
 bower install vui-colors
 ```
 
-## Usage
+Or alternatively from [NPM][npm-url]:
+```shell
+npm install vui-colors
+```
 
-**Import the variables:**
+Depending on which installation method you choose, use that path when doing the SASS import:
 
 ```scss
-@import 'bower_components/vui-colors/colors.scss'; // or...
-
+@import "bower_components/vui-colors/colors.scss";
+// or...
 @import "node_modules/vui-colors/colors.scss";
 ```
 
-Then use the [color variables](https://github.com/Brightspace/valence-ui-colors/blob/master/colors.scss) as needed.
+## Usage
 
+To use a particular color, reference the variable name in your SASS:
 
-For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+```sass
+div {
+	background-color: $vui-color-saphirella;
+}
+```
 
-#### Coding styles
+The list of available color variable names is [in the source](/colors.scss).
+
+## Coding styles
+
 See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
 [bower-url]: http://bower.io/search/?q=vui-colors
