@@ -4,6 +4,7 @@
   "description": "Variables for the VUI color palette.",
   "scripts": {
     "build:sass": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
+    "perceptual-diff": "percy snapshot test/",
     "test": "npm run build:sass"
   },
   "repository": {
