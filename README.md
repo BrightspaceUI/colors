@@ -1,45 +1,46 @@
 # vui-colors
 
 [![Bower version][bower-image]][bower-url]
-[![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
-[![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains [Sass variables](http://sass-lang.com/) for the VUI color palette.
+This component contains a [Polymer](https://www.polymer-project.org/1.0/) web component for the VUI color palette.
 
 For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 ## Installation
 
 `vui-colors` can be installed from [Bower][bower-url]:
+
 ```shell
 bower install vui-colors
 ```
 
-Or alternatively from [NPM][npm-url]:
-```shell
-npm install vui-colors
-```
-
-Depending on which installation method you choose, use that path when doing the SASS import:
-
-```scss
-@import "bower_components/vui-colors/colors.scss";
-// or...
-@import "node_modules/vui-colors/colors.scss";
-```
-
 ## Usage
 
-To use a particular color, reference the variable name in your SASS:
+In order to import the `vui-colors` component, we first need to include the [webcomponents](http://webcomponents.org/polyfills/) polyfill.
 
-```sass
-div {
-	background-color: $vui-color-saphirella;
-}
+```html
+<head>
+	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+	...
+</head>
 ```
 
-The list of available color variable names is [in the source](/colors.scss).
+Then import the [color.html](/colors.html) palette and use the color variables in your CSS.
+
+```html
+<head>
+	...
+	<link rel="import" href="../vui-colors/colors.html">
+	<style is="custom-style" include="vui-colors">
+		div {
+			background-color: var(--vui-color-saphirella, #fff);
+		}
+	</style>
+</head>
+```
+
+The list of available color variable names is [in the source](/colors.html).
 
 ## Coding styles
 
@@ -47,9 +48,5 @@ See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valenc
 
 [bower-url]: http://bower.io/search/?q=vui-colors
 [bower-image]: https://img.shields.io/bower/v/vui-colors.svg
-[npm-url]: https://www.npmjs.org/package/vui-colors
-[npm-image]: https://img.shields.io/npm/v/vui-colors.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-colors
 [ci-image]: https://travis-ci.org/Brightspace/valence-ui-colors.svg?branch=master
-[dependencies-url]: https://david-dm.org/brightspace/valence-ui-colors
-[dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-colors.svg
