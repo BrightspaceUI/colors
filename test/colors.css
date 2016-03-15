@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,300';
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 1rem;
+}
+
+div {
+	border-radius: 16px;
+	display: inline-block;
+	height: 75px;
+	margin-bottom: 1.4rem;
+	position: relative;
+	width: 250px;
+}
+
+div:after {
+	color: #565a5c;
+	font-size: 1rem;
+	left: 10px;
+	position: absolute;
+	top: 75px;
+}
