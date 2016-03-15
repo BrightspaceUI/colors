@@ -1,11 +1,12 @@
 {
   "name": "vui-colors",
-  "version": "0.2.0",
+  "version": "1.0.0",
+  "private": true,
   "description": "Variables for the VUI color palette.",
   "scripts": {
-    "build:sass": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
-    "perceptual-diff": "percy snapshot test/",
-    "test": "npm run build:sass"
+    "perceptual-diff": "percy snapshot test/ --enable_javascript",
+    "postinstall": "bower install",
+    "test": "polylint --input *.html"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,10 @@
     "url": "https://github.com/Brightspace/valence-ui-colors/issues"
   },
   "homepage": "https://github.com/Brightspace/valence-ui-colors",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "^1.7.7"
+  },
   "devDependencies": {
-    "node-sass": "^3.4.2",
-    "postcss-cli": "^2.5.1"
+    "polylint": "^2.10.0"
   }
 }
