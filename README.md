@@ -7,6 +7,8 @@ This component contains a [Polymer](https://www.polymer-project.org/1.0/) web co
 
 For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
+Looking for SASS-based valence-ui-colors? It’s [over here](https://github.com/Brightspace/valence-ui-colors/tree/sass).
+
 ## Installation
 
 `vui-colors` can be installed from [Bower][bower-url]:
