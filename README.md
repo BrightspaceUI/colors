@@ -1,4 +1,4 @@
-**Looking for SASS-based `valence-ui-colors`?** It’s [over here](/tree/sass).
+**Looking for SASS-based `valence-ui-colors`?** It’s [over here](https://github.com/Brightspace/valence-ui-colors/tree/sass).
 
 # vui-colors
 
