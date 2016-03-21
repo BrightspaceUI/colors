@@ -12,22 +12,10 @@
     "type": "git",
     "url": "https://github.com/Brightspace/valence-ui-colors.git"
   },
-  "keywords": [
-    "d2l",
-    "valence-ui",
-    "vui",
-    "color"
-  ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/Brightspace/valence-ui-colors/issues"
-  },
-  "homepage": "https://github.com/Brightspace/valence-ui-colors",
-  "dependencies": {
-    "bower": "^1.7.7"
-  },
   "devDependencies": {
+    "bower": "^1.7.7",
     "polylint": "^2.10.0"
   }
 }

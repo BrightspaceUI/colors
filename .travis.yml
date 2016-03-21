@@ -1,18 +1,9 @@
 language: node_js
-node_js:
-- 5.6
+node_js: stable
 before_script:
 - gem install percy-cli
 after_success:
 - '[ "$TRAVIS_SECURE_ENV_VARS" = "true" ] && npm run perceptual-diff'
-deploy:
-  provider: npm
-  email: d2ltravisdeploy@d2l.com
-  api_key:
-    secure: HRrCuH3wq05Zf+NRgVtHecbQvAjKMlaJzMEDcJsQskud3PnzHPSYm9WzZE9VP+1TD+QOVOBFsoWoSapBuvqGhUpwPjkQZ1RXoHxQ1Sz0b8l3JY2u/srg2/Xot70nu2+woKyzDQGYOdfwr5H0ix4cqY0TkC2Hh/q5AiVXutas7m1oO8QU/MrBYM51q8xbu6cvJ1zq5WsWS16VnKIeXJEPIll/+PUwu+Am5o9MemMNwgcmX94+gfravmQU385266q/DYPz13QDMHl0kYxoo4DIXOaYeReko4cB7C/KJMBKMFDHvwscnkCEmmEX2Z8XobydCe1KZuyBK8MVGZN3SjmyTmRhG2zLSyY1nPeAYe+xS7ttG1/Kxox3Q5o5BY/fLspElFgdrhuvUhhEzu1+AOY7vyYeMo6guuB+cE2Ybl1du90hyxW+YU+3g7l/WUuqFZGiA9NAhoQqUVNT1mDWCMI08RZlS4c+vGJBRwRYEjLB/mdZmJpSWX4TJCu72RzoO06ViZ4nk21ejah+FcVYGyADKWEnLxGlJC3ph0KSUVr2iaWyDNm9s0vrOl2QJKbsZ/M90+VJmIh2rC417JEfAlKYB+FYErK4CjHCpulU3czRcuORa8EVzroh56dIW9hbFgT0QXaurm7hxDDoo5YDGuP6n5APTqtyzv3Ajr2sRRdQRZI=
-  on:
-    tags: true
-    all_branches: true
 env:
   global:
     secure: JVWwRf2/1kddfQBmjrStRg3HoTCjibl89rCRmrYxAvGmQ4Wp5ngqh3n0LLLci7zT7SmeOXdufTEABtamOw4HMGshAiCuk/vZtZ40Sh7qQdl6xs1uu353PuOI0qmmmLFzWvWvP+drooBumWrzD0tHey3yxSnZsPPNRXOUZeeSe7U51M7C38tLwHxZelhz8DMk81TD18Du/XsfVB2gBAcRT2KmJeeveduC8R75helJBFGOVkoCdzmZDLIaVSJXWhth+iBuAqZPabhNx97RXQRLsg3aW6GnnZTHyPUJes02OqnrICGiSScCSKhht6sCX0GGo6t50vBXvx54zbsDelUEgv4ZwOm2t69dTPtVbwq7//RfVm0oP6KlmKFJSgabfPo1FFCGKmzWyCNP5YAdK3Sgf9To3D5jYpu1H4xblJQ25fyN46Qvi2sVaowpBlrkyIOb78fadW2aRO5I6yRNZGkYCjpRnFMfyxCyHobEtlfbPSjiWMc/SO0/sd5AAr8PeM9jwPbZWQZpTZg18GU2cWz3NSQQQNRow8QYZL00UVn/GiT7z1UndteytqLPeIqLu9FZMaxAxPIAjXsX168rOP99tGxpo9HKilRm2pP2UAlflNaZV+twJEdHduxzwW6e3VIroFgwMvOHW8AwOxofZfKVve94DEhrvfaDMzqIapne3Jc=
