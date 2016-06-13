@@ -1,54 +1,52 @@
-**Looking for SASS-based `valence-ui-colors`?** It’s [over here](https://github.com/Brightspace/valence-ui-colors/tree/sass).
+**Looking for SASS-based `d2l-colors`?** It’s [over here](https://github.com/Brightspace/d2l-colors-ui/tree/sass).
 
-# vui-colors
+# d2l-colors
 
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
-This component contains a [Polymer](https://www.polymer-project.org/1.0/) web component for the VUI color palette.
+This component contains a [Polymer](https://www.polymer-project.org/1.0/) web component for the D2L color palette.
 
-For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 ## Installation
 
-`vui-colors` can be installed from [Bower][bower-url]:
+`d2l-colors` can be installed from [Bower][bower-url]:
 
 ```shell
-bower install vui-colors
+bower install d2l-colors
 ```
 
 ## Usage
 
-In order to import the `vui-colors` component, we first need to include the [webcomponents](http://webcomponents.org/polyfills/) polyfill.
+Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyfill (for browsers who don't natively support web components), then import `d2l-colors.html`.
 
 ```html
 <head>
 	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
-	...
+	<link rel="import" href="../d2l-colors/d2l-colors.html">
 </head>
 ```
 
-Then import the [color.html](/colors.html) palette and use the color variables in your CSS.
+By including the D2L color's [shared style](https://www.polymer-project.org/1.0/docs/devguide/styling#style-modules), you can reference the color variables in your CSS:
 
 ```html
 <head>
-	...
-	<link rel="import" href="../vui-colors/colors.html">
-	<style is="custom-style" include="vui-colors">
+	<style is="custom-style" include="d2l-colors">
 		div {
-			background-color: var(--vui-color-saphirella, #fff);
+			background-color: var(--d2l-color-saphirella);
 		}
 	</style>
 </head>
 ```
 
-The list of available color variable names is [in the source](/colors.html).
+The list of available color variable names is [in the source](https://github.com/Brightspace/d2l-colors-ui/tree/master/d2l-colors.html).
 
 ## Coding styles
 
-See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
+See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
-[bower-url]: http://bower.io/search/?q=vui-colors
-[bower-image]: https://img.shields.io/bower/v/vui-colors.svg
-[ci-url]: https://travis-ci.org/Brightspace/valence-ui-colors
-[ci-image]: https://travis-ci.org/Brightspace/valence-ui-colors.svg?branch=master
+[bower-url]: http://bower.io/search/?q=d2l-colors
+[bower-image]: https://img.shields.io/bower/v/d2l-colors.svg
+[ci-url]: https://travis-ci.org/Brightspace/d2l-colors-ui
+[ci-image]: https://travis-ci.org/Brightspace/d2l-colors-ui.svg?branch=master

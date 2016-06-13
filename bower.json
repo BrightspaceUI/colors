@@ -1,6 +1,10 @@
 {
-  "name": "vui-colors",
-  "main": "colors.html",
+  "name": "d2l-colors",
+  "description": "Polymer web component variables for the D2L color palette",
+  "main": [
+      "d2l-colors.html",
+      "colors.scss"
+  ],
   "license": "Apache-2.0",
   "ignore": [
     ".editorconfig",
