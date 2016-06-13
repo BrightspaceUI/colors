@@ -4,7 +4,6 @@
   "private": true,
   "description": "Polymer web component variables for the D2L color palette",
   "scripts": {
-    "perceptual-diff": "percy snapshot test/ --enable_javascript",
     "postinstall": "bower install",
     "test": "polylint --input *.html"
   },
