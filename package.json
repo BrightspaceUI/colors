@@ -1,8 +1,8 @@
 {
-  "name": "vui-colors",
-  "version": "1.0.1",
+  "name": "d2l-colors",
+  "version": "2.0.0",
   "private": true,
-  "description": "Variables for the VUI color palette.",
+  "description": "Polymer web component variables for the D2L color palette",
   "scripts": {
     "perceptual-diff": "percy snapshot test/ --enable_javascript",
     "postinstall": "bower install",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Brightspace/valence-ui-colors.git"
+    "url": "https://github.com/Brightspace/d2l-colors-ui.git"
   },
   "author": "D2L Corporation",
   "license": "Apache-2.0",
