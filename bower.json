@@ -19,7 +19,8 @@
     ".gitattributes",
     ".gitignore",
     ".travis.yml",
-    "package.json"
+    "package.json",
+    "test"
   ],
   "dependencies": {
     "polymer": "^1.3.0"

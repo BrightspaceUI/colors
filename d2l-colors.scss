@@ -41,7 +41,7 @@ $d2l-color-white: #fff !default;
 $d2l-color-woolonardo: #f2f3f5 !default;
 
 // gradients
-$d2l-color-buttonic: linear-gradient(to bottom, $vui-color-regolith 0%, $vui-color-gypsum 100%) !default;
-$d2l-color-meglor: linear-gradient(to bottom, $vui-color-pressicus 0%, $vui-color-tungsten 100%) !default;
-$d2l-color-trancition: linear-gradient(to bottom, $vui-color-white 0%, $vui-color-regolith 100%) !default;
-$d2l-color-trixon: linear-gradient(to bottom, $vui-color-regolith 0%, $vui-color-woolonardo 100%) !default;
+$d2l-color-buttonic: linear-gradient(to bottom, $d2l-color-regolith 0%, $d2l-color-gypsum 100%) !default;
+$d2l-color-meglor: linear-gradient(to bottom, $d2l-color-pressicus 0%, $d2l-color-tungsten 100%) !default;
+$d2l-color-trancition: linear-gradient(to bottom, $d2l-color-white 0%, $d2l-color-regolith 100%) !default;
+$d2l-color-trixon: linear-gradient(to bottom, $d2l-color-regolith 0%, $d2l-color-woolonardo 100%) !default;
