@@ -1,0 +1,47 @@
+
+// primary palette
+$d2l-color-carnelian: #e57231 !default;
+$d2l-color-celestine: #006fbf !default;
+
+// secondary palette
+$d2l-color-azurite: #00a4c0 !default;
+$d2l-color-celestuba: #1c5295 !default;
+$d2l-color-cinnabar: #cd2026 !default;
+$d2l-color-citrine: #ffba59 !default;
+$d2l-color-olivine: #46a661 !default;
+$d2l-color-zircon: #00bddd !default;
+
+// tertiary palette (for gradients)
+$d2l-color-lurite: #f5ec5a !default;
+$d2l-color-panthera: #ff389b !default;
+$d2l-color-gravah: #32075b !default;
+$d2l-color-saphirella: #00a8dd !default;
+$d2l-color-violettine: #4c3f99 !default;
+$d2l-color-chartronic: #d2e830 !default;
+$d2l-color-deephonica: #00afaa !default;
+$d2l-color-koolaudica: #69be28 !default;
+
+// the lighter side
+$d2l-color-celestine-light-1: #f2f8fc !default;
+$d2l-color-celestine-light-2: #99c5e5 !default;
+$d2l-color-olivine-light-1: #ecf6ee !default;
+$d2l-color-olivine-light-2: #65b57b !default;
+$d2l-color-zircon-light-1: #dbf5fa !default;
+$d2l-color-zircon-light-2: #bdedf5 !default;
+
+// shades of grey
+$d2l-color-ferrite: #565a5c !default;
+$d2l-color-galena: #7c8695 !default;
+$d2l-color-gypsum: #e6eaf0 !default;
+$d2l-color-pressicus: #b9c2d0 !default;
+$d2l-color-regolith: #f9fafb !default;
+$d2l-color-titanius: #d3d9e3 !default;
+$d2l-color-tungsten: #72777a !default;
+$d2l-color-white: #fff !default;
+$d2l-color-woolonardo: #f2f3f5 !default;
+
+// gradients
+$d2l-color-buttonic: linear-gradient(to bottom, $vui-color-regolith 0%, $vui-color-gypsum 100%) !default;
+$d2l-color-meglor: linear-gradient(to bottom, $vui-color-pressicus 0%, $vui-color-tungsten 100%) !default;
+$d2l-color-trancition: linear-gradient(to bottom, $vui-color-white 0%, $vui-color-regolith 100%) !default;
+$d2l-color-trixon: linear-gradient(to bottom, $vui-color-regolith 0%, $vui-color-woolonardo 100%) !default;

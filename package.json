@@ -2,7 +2,15 @@
   "name": "d2l-colors",
   "version": "2.0.0",
   "private": true,
-  "description": "Polymer web component variables for the D2L color palette",
+  "description": "Polymer web component and Sass variables for the D2L color palette",
+  "keywords": [
+    "d2l",
+    "ui",
+    "colors",
+    "sass",
+    "scss",
+    "web component"
+  ],
   "scripts": {
     "postinstall": "bower install",
     "test": "polylint --input *.html"
