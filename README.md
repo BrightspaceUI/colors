@@ -40,7 +40,7 @@ By including the D2L color's [shared style](https://www.polymer-project.org/1.0/
 </head>
 ```
 
-The full list of available color variable names can be found in [d2l-colors.html](https://github.com/Brightspace/d2l-colors-ui/tree/master/d2l-colors.html).
+The full list of available color variable names can be found in [d2l-colors.html](https://github.com/BrightspaceUI/colors/tree/master/d2l-colors.html).
 
 ### Sass Variables
 
@@ -54,7 +54,7 @@ div {
 }
 ```
 
-The full list of available color variable names can be found in [d2l-colors.scss](https://github.com/Brightspace/d2l-colors-ui/tree/master/d2l-colors.scss).
+The full list of available color variable names can be found in [d2l-colors.scss](https://github.com/BrightspaceUI/colors/tree/master/d2l-colors.scss).
 
 ## Coding styles
 
@@ -62,5 +62,5 @@ See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui
 
 [bower-url]: http://bower.io/search/?q=d2l-colors
 [bower-image]: https://img.shields.io/bower/v/d2l-colors.svg
-[ci-url]: https://travis-ci.org/Brightspace/d2l-colors-ui
-[ci-image]: https://travis-ci.org/Brightspace/d2l-colors-ui.svg?branch=master
+[ci-url]: https://travis-ci.org/BrightspaceUI/colors
+[ci-image]: https://travis-ci.org/BrightspaceUI/colors.svg?branch=master
