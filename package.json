@@ -14,7 +14,10 @@
   "scripts": {
     "postinstall": "bower install",
     "build:sass": "node-sass ./test/test.scss ./test/test.css",
-    "test": "polylint --input *.html && npm run build:sass"
+    "test:lint": "npm run test:lint:wc && npm run test:lint:html",
+    "test:lint:html": "eslint *.html",
+    "test:lint:wc": "polymer lint -i d2l-colors.html",
+    "test": "npm run test:lint && npm run build:sass"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,10 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "bower": "^1.7.7",
+    "eslint": "^3.7.1",
+    "eslint-config-brightspace": "^0.2.4",
+    "eslint-plugin-html": "^1.5.3",
     "node-sass": "^3.7.0",
-    "polylint": "^2.10.0"
+    "polymer-cli": "^0.16.0"
   }
 }
