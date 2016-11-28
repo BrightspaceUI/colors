@@ -3,212 +3,170 @@
 	<head>
 		<title>Colors Sample</title>
 		<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+		<link rel="import" href="../../polymer/polymer.html">
 		<link rel="import" href="../d2l-colors.html">
-		<style is="custom-style" include="d2l-colors">
+		<style>
 
 			@import 'https://fonts.googleapis.com/css?family=Lato:700,400,300';
 
 			html {
-				font-size: 20px;
+				font-size: 18px;
 			}
 
 			body {
-				color: var(--d2l-color-ferrite, #fff);
+				color: #565a5c;
 				font-family: 'Lato', sans-serif;
 				margin: 1rem;
 			}
 
-			div {
-				border-radius: 16px;
-				display: inline-block;
-				height: 75px;
-				margin-bottom: 1.4rem;
-				position: relative;
-				width: 250px;
-			}
-
-			div:after {
-				color: #565a5c;
-				font-size: 1rem;
-				left: 10px;
-				position: absolute;
-				top: 75px;
-			}
-
-			.vui-color-carnelian {
-				background-color: var(--d2l-color-carnelian, #fff);
-			}
-			.vui-color-carnelian:after {
-			  content: "carnelian #e57231";
-			}
-			.vui-color-celestine {
-				background-color: var(--d2l-color-celestine, #fff);
-			}
-			.vui-color-celestine:after {
-				content: "celestine #006fbf";
-			}
-			.vui-color-azurite {
-				background-color: var(--d2l-color-azurite, #fff);
-			}
-			.vui-color-azurite:after {
-				content: "azurite #00a4c0";
-			}
-			.vui-color-celestuba {
-				background-color: var(--d2l-color-celestuba, #fff);
-			}
-			.vui-color-celestuba:after {
-				content: "celestuba #1c5295";
-			}
-			.vui-color-cinnabar {
-				background-color: var(--d2l-color-cinnabar, #fff);
-			}
-			.vui-color-cinnabar:after {
-				content: "cinnabar #cd2026";
-			}
-			.vui-color-citrine {
-				background-color: var(--d2l-color-citrine, #fff);
-			}
-			.vui-color-citrine:after {
-				content: "citrine #ffba59";
-			}
-			.vui-color-olivine {
-				background-color: var(--d2l-color-olivine, #fff);
-			}
-			.vui-color-olivine:after {
-				content: "olivine #46a661";
-			}
-			.vui-color-zircon {
-				background-color: var(--d2l-color-zircon, #fff);
-			}
-			.vui-color-zircon:after {
-				content: "zircon #00bddd";
-			}
-			.vui-color-celestine-light-1 {
-				background-color: var(--d2l-color-celestine-light-1, #fff);
-			}
-			.vui-color-celestine-light-1:after {
-				content: "celestine-light-1 #f2f8fc";
-			}
-			.vui-color-celestine-light-2 {
-				background-color: var(--d2l-color-celestine-light-2, #fff);
-			}
-			.vui-color-celestine-light-2:after {
-				content: "celestine-light-2 #99c5e5";
-			}
-			.vui-color-olivine-light-1 {
-				background-color: var(--d2l-color-olivine-light-1, #fff);
-			}
-			.vui-color-olivine-light-1:after {
-				content: "olivine-light-1 #ecf6ee";
-			}
-			.vui-color-olivine-light-2 {
-				background-color: var(--d2l-color-olivine-light-2, #fff);
-			}
-			.vui-color-olivine-light-2:after {
-				content: "olivine-light-2 #65b57b";
-			}
-			.vui-color-zircon-light-1 {
-				background-color: var(--d2l-color-zircon-light-1, #fff);
-			}
-			.vui-color-zircon-light-1:after {
-				content: "zircon-light-1 #dbf5fa";
-			}
-			.vui-color-zircon-light-2 {
-				background-color: var(--d2l-color-zircon-light-2, #fff);
-			}
-			.vui-color-zircon-light-2:after {
-				content: "zircon-light-2 #bdedf5";
-			}
-			.vui-color-ferrite {
-				background-color: var(--d2l-color-ferrite, #fff);
-			}
-			.vui-color-ferrite:after {
-				content: "ferrite #565a5c";
-			}
-			.vui-color-galena {
-				background-color: var(--d2l-color-galena, #fff);
-			}
-			.vui-color-galena:after {
-				content: "galena #7c8695";
-			}
-			.vui-color-gypsum {
-				background-color: var(--d2l-color-gypsum, #fff);
-			}
-			.vui-color-gypsum:after {
-				content: "gypsum #e6eaf0";
-			}
-			.vui-color-pressicus {
-				background-color: var(--d2l-color-pressicus, #fff);
-			}
-			.vui-color-pressicus:after {
-				content: "pressicus #b9c2d0";
-			}
-			.vui-color-regolith {
-			background-color: var(--d2l-color-regolith, #fff);
-			}
-			.vui-color-regolith:after {
-				content: "regolith #f9fafb";
-			}
-			.vui-color-titanius {
-				background-color: var(--d2l-color-titanius, #fff);
-			}
-			.vui-color-titanius:after {
-				content: "titanius #d3d9e3";
-			}
-			.vui-color-tungsten {
-				background-color: var(--d2l-color-tungsten, #fff);
-			}
-			.vui-color-tungsten:after {
-				content: "tungsten #72777a";
-			}
-			.vui-color-white {
-				background-color: var(--d2l-color-white, #fff);
-			}
-			.vui-color-white:after {
-				content: "white #fff";
-			}
-			.vui-color-woolonardo {
-				background-color: var(--d2l-color-woolonardo, #fff);
-			}
-			.vui-color-woolonardo:after {
-				content: "woolonardo #f2f3f5";
-			}
-
 		</style>
+		<dom-module id="d2l-demo-color-swatch">
+			<template>
+				<style include="d2l-colors">
+					:host {
+						border-radius: 16px;
+						box-sizing: border-box;
+						color: #fff;
+						display: inline-block;
+						font-size: 1rem;
+						font-weight: 400;
+						padding: 1rem;
+						margin-bottom: 1rem;
+						height: 75px;
+						width: 220px;
+					}
+					:host([name="carnelian"]) {
+						background-color: var(--d2l-color-carnelian);
+					}
+					:host([name="celestine"]) {
+						background-color: var(--d2l-color-celestine);
+					}
+					:host([name="azurite"]) {
+						background-color: var(--d2l-color-azurite);
+					}
+					:host([name="celestuba"]) {
+						background-color: var(--d2l-color-celestuba);
+					}
+					:host([name="cinnabar"]) {
+						background-color: var(--d2l-color-cinnabar);
+					}
+					:host([name="citrine"]) {
+						background-color: var(--d2l-color-citrine);
+					}
+					:host([name="olivine"]) {
+						background-color: var(--d2l-color-olivine);
+					}
+					:host([name="zircon"]) {
+						background-color: var(--d2l-color-zircon);
+					}
+					:host([name="celestine-light-1"]) {
+						background-color: var(--d2l-color-celestine-light-1);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="celestine-light-2"]) {
+						background-color: var(--d2l-color-celestine-light-2);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="olivine-light-1"]) {
+						background-color: var(--d2l-color-olivine-light-1);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="olivine-light-2"]) {
+						background-color: var(--d2l-color-olivine-light-2);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="zircon-light-1"]) {
+						background-color: var(--d2l-color-zircon-light-1);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="zircon-light-2"]) {
+						background-color: var(--d2l-color-zircon-light-2);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="ferrite"]) {
+						background-color: var(--d2l-color-ferrite);
+					}
+					:host([name="galena"]) {
+						background-color: var(--d2l-color-galena);
+					}
+					:host([name="gypsum"]) {
+						background-color: var(--d2l-color-gypsum);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="pressicus"]) {
+						background-color: var(--d2l-color-pressicus);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="regolith"]) {
+						background-color: var(--d2l-color-regolith);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="titanius"]) {
+						background-color: var(--d2l-color-titanius);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="tungsten"]) {
+						background-color: var(--d2l-color-tungsten);
+					}
+					:host([name="white"]) {
+						background-color: var(--d2l-color-white);
+						color: var(--d2l-color-ferrite);
+					}
+					:host([name="woolonardo"]) {
+						background-color: var(--d2l-color-woolonardo);
+						color: var(--d2l-color-ferrite);
+					}
+				</style>
+				<div>[[name]]</div>
+			</template>
+			<script>
+				Polymer({
+					is: 'd2l-demo-color-swatch',
+					properties: {
+						name: String
+					},
+					attached: function() {
+						this.classList.add('vui-color-' + this.name);
+					}
+				});
+			</script>
+		</dom-module>
+
 	</head>
 	<body>
+
 		<h1>Colors</h1>
 
 		<h2>Primary<h2>
-		<div class="vui-color-carnelian"></div>
-		<div class="vui-color-celestine"></div>
+		<d2l-demo-color-swatch name="carnelian"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="celestine"></d2l-demo-color-swatch>
 
 		<h2>Secondary<h2>
-		<div title="olivine" class="vui-color-olivine"></div>
-		<div title="citrine" class="vui-color-citrine"></div>
-		<div title="cinnabar" class="vui-color-cinnabar"></div>
-		<div title="zircon" class="vui-color-zircon"></div>
-		<div title="azurite" class="vui-color-azurite"></div>
-		<div title="celestuba" class="vui-color-celestuba"></div>
+		<d2l-demo-color-swatch name="olivine"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="citrine"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="cinnabar"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="zircon"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="azurite"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="celestuba"></d2l-demo-color-swatch>
 
 		<h2>Shades of Grey<h2>
-		<div title="white" class="vui-color-white"></div>
-		<div title="regolith" class="vui-color-regolith"></div>
-		<div title="woolonardo" class="vui-color-woolonardo"></div>
-		<div title="gypsum" class="vui-color-gypsum"></div>
-		<div title="titanius" class="vui-color-titanius"></div>
-		<div title="pressicus" class="vui-color-pressicus"></div>
-		<div title="galena" class="vui-color-galena"></div>
-		<div title="tungsten" class="vui-color-tungsten"></div>
-		<div title="ferrite" class="vui-color-ferrite"></div>
+		<d2l-demo-color-swatch name="white"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="regolith"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="woolonardo"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="gypsum"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="titanius"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="pressicus"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="galena"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="tungsten"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="ferrite"></d2l-demo-color-swatch>
 
 		<h2>Lighter Side<h2>
-		<div title="celestine-light-1" class="vui-color-celestine-light-1"></div>
-		<div title="celestine-light-2" class="vui-color-celestine-light-2"></div>
-		<div title="olivine-light-1" class="vui-color-olivine-light-1"></div>
-		<div title="olivine-light-2" class="vui-color-olivine-light-2"></div>
-		<div title="zircon-light-1" class="vui-color-zircon-light-1"></div>
-		<div title="zircon-light-2" class="vui-color-zircon-light-2"></div>
+		<d2l-demo-color-swatch name="celestine-light-1"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="celestine-light-2"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="olivine-light-1"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="olivine-light-2"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="zircon-light-1"></d2l-demo-color-swatch>
+		<d2l-demo-color-swatch name="zircon-light-2"></d2l-demo-color-swatch>
 
 	</body>
 </html>
