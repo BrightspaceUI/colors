@@ -1,169 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<title>Colors Sample</title>
 		<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
-		<link rel="import" href="../../polymer/polymer.html">
-		<link rel="import" href="../d2l-colors.html">
-		<style>
-
-			@import 'https://fonts.googleapis.com/css?family=Lato:700,400,300';
-
-			html {
-				font-size: 18px;
-			}
-
-			body {
-				color: #565a5c;
-				font-family: 'Lato', sans-serif;
-				margin: 1rem;
-			}
-
-		</style>
-		<dom-module id="d2l-demo-color-swatch">
-			<template>
-				<style include="d2l-colors">
-					:host {
-						border-radius: 16px;
-						box-sizing: border-box;
-						color: #fff;
-						display: inline-block;
-						font-size: 1rem;
-						font-weight: 400;
-						padding: 1rem;
-						margin-bottom: 1rem;
-						height: 75px;
-						width: 220px;
-					}
-					:host([name="carnelian"]) {
-						background-color: var(--d2l-color-carnelian);
-					}
-					:host([name="celestine"]) {
-						background-color: var(--d2l-color-celestine);
-					}
-					:host([name="azurite"]) {
-						background-color: var(--d2l-color-azurite);
-					}
-					:host([name="celestuba"]) {
-						background-color: var(--d2l-color-celestuba);
-					}
-					:host([name="cinnabar"]) {
-						background-color: var(--d2l-color-cinnabar);
-					}
-					:host([name="citrine"]) {
-						background-color: var(--d2l-color-citrine);
-					}
-					:host([name="olivine"]) {
-						background-color: var(--d2l-color-olivine);
-					}
-					:host([name="zircon"]) {
-						background-color: var(--d2l-color-zircon);
-					}
-					:host([name="celestine-light-1"]) {
-						background-color: var(--d2l-color-celestine-light-1);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="celestine-light-2"]) {
-						background-color: var(--d2l-color-celestine-light-2);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="olivine-light-1"]) {
-						background-color: var(--d2l-color-olivine-light-1);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="olivine-light-2"]) {
-						background-color: var(--d2l-color-olivine-light-2);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="zircon-light-1"]) {
-						background-color: var(--d2l-color-zircon-light-1);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="zircon-light-2"]) {
-						background-color: var(--d2l-color-zircon-light-2);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="ferrite"]) {
-						background-color: var(--d2l-color-ferrite);
-					}
-					:host([name="galena"]) {
-						background-color: var(--d2l-color-galena);
-					}
-					:host([name="gypsum"]) {
-						background-color: var(--d2l-color-gypsum);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="pressicus"]) {
-						background-color: var(--d2l-color-pressicus);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="regolith"]) {
-						background-color: var(--d2l-color-regolith);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="titanius"]) {
-						background-color: var(--d2l-color-titanius);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="tungsten"]) {
-						background-color: var(--d2l-color-tungsten);
-					}
-					:host([name="white"]) {
-						background-color: var(--d2l-color-white);
-						color: var(--d2l-color-ferrite);
-					}
-					:host([name="woolonardo"]) {
-						background-color: var(--d2l-color-woolonardo);
-						color: var(--d2l-color-ferrite);
-					}
-				</style>
-				<div>[[name]]</div>
-			</template>
-			<script>
-				Polymer({
-					is: 'd2l-demo-color-swatch',
-					properties: {
-						name: String
-					}
-				});
-			</script>
-		</dom-module>
-
+		<link rel="import" href="../../d2l-demo-template/d2l-demo-template.html">
+		<link rel="import" href="color-swatch.html">
 	</head>
-	<body>
+	<body unresolved>
+		<d2l-demo-template title="d2l-colors">
+			<div class="d2l-demo-fixture">
 
-		<h1>Colors</h1>
+				<h1>Colors</h1>
 
-		<h2>Primary<h2>
-		<d2l-demo-color-swatch name="carnelian"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="celestine"></d2l-demo-color-swatch>
+				<h2>Primary<h2>
+				<d2l-demo-color-swatch name="carnelian"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="celestine"></d2l-demo-color-swatch>
 
-		<h2>Secondary<h2>
-		<d2l-demo-color-swatch name="olivine"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="citrine"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="cinnabar"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="zircon"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="azurite"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="celestuba"></d2l-demo-color-swatch>
+				<h2>Secondary<h2>
+				<d2l-demo-color-swatch name="olivine"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="citrine"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="cinnabar"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="zircon"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="azurite"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="celestuba"></d2l-demo-color-swatch>
 
-		<h2>Shades of Grey<h2>
-		<d2l-demo-color-swatch name="white"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="regolith"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="woolonardo"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="gypsum"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="titanius"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="pressicus"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="galena"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="tungsten"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="ferrite"></d2l-demo-color-swatch>
+				<h2>Shades of Grey<h2>
+				<d2l-demo-color-swatch name="white"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="regolith"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="woolonardo"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="gypsum"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="titanius"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="pressicus"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="galena"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="tungsten"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="ferrite"></d2l-demo-color-swatch>
 
-		<h2>Lighter Side<h2>
-		<d2l-demo-color-swatch name="celestine-light-1"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="celestine-light-2"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="olivine-light-1"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="olivine-light-2"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="zircon-light-1"></d2l-demo-color-swatch>
-		<d2l-demo-color-swatch name="zircon-light-2"></d2l-demo-color-swatch>
-
+				<h2>Lighter Side<h2>
+				<d2l-demo-color-swatch name="celestine-light-1"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="celestine-light-2"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="olivine-light-1"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="olivine-light-2"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="zircon-light-1"></d2l-demo-color-swatch>
+				<d2l-demo-color-swatch name="zircon-light-2"></d2l-demo-color-swatch>
+			</div>
+		</d2l-demo-template>
 	</body>
 </html>

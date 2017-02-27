@@ -2,8 +2,8 @@
   "name": "d2l-colors",
   "description": "Polymer web component and Sass variables for the D2L color palette",
   "main": [
-      "d2l-colors.html",
-      "d2l-colors.scss"
+    "d2l-colors.html",
+    "d2l-colors.scss"
   ],
   "license": "Apache-2.0",
   "keywords": [
@@ -16,6 +16,7 @@
   ],
   "ignore": [
     ".editorconfig",
+    ".eslintrc",
     ".gitattributes",
     ".gitignore",
     ".travis.yml",
@@ -24,5 +25,8 @@
   ],
   "dependencies": {
     "polymer": "^1.7.0"
+  },
+  "devDependencies": {
+    "d2l-demo-template": "^0.0.11"
   }
 }
