@@ -28,17 +28,19 @@ Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyf
 </head>
 ```
 
-By including the D2L color's [shared style](https://www.polymer-project.org/1.0/docs/devguide/styling#style-modules), you can reference the color variables in your CSS:
+You can then reference the color variables from inside [custom-style](https://www.polymer-project.org/1.0/docs/devguide/styling#custom-style) blocks:
 
 ```html
 <head>
-	<style is="custom-style" include="d2l-colors">
+	<style is="custom-style">
 		div {
 			background-color: var(--d2l-color-saphirella);
 		}
 	</style>
 </head>
 ```
+
+'''Note:''' if you're writing a web component, the `custom-style` block can be omitted.
 
 The full list of available color variable names can be found in [d2l-colors.html](https://github.com/BrightspaceUI/colors/tree/master/d2l-colors.html).
 
