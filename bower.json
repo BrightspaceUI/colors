@@ -27,7 +27,7 @@
     "polymer": "Polymer/polymer#^1.9.1 || ^2.0.0"
   },
   "devDependencies": {
-    "d2l-demo-template": "mdgbayly/d2l-demo-template-ui#polymer2"
+    "d2l-demo-template": "^0.0.11"
   },
   "variants": {
     "1.x": {
@@ -35,7 +35,7 @@
         "polymer": "Polymer/polymer#^1.7.0"
       },
       "devDependencies": {
-        "d2l-demo-template": "mdgbayly/d2l-demo-template-ui#polymer2"
+        "d2l-demo-template": "^0.0.11"
       }
     }
   }
