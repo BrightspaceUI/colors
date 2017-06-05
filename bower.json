@@ -36,6 +36,9 @@
       },
       "devDependencies": {
         "d2l-demo-template": "^1.0.0"
+      },
+      "resolutions": {
+        "webcomponentsjs": "^0.7"
       }
     }
   },
