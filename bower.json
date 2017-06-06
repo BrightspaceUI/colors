@@ -24,9 +24,25 @@
     "test"
   ],
   "dependencies": {
-    "polymer": "^1.7.0"
+    "polymer": "Polymer/polymer#^1.9.1 || ^2.0.0"
   },
   "devDependencies": {
-    "d2l-demo-template": "^0.0.11"
+    "d2l-demo-template": "^1.0.0"
+  },
+  "variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#^1.9.1"
+      },
+      "devDependencies": {
+        "d2l-demo-template": "^1.0.0"
+      },
+      "resolutions": {
+        "webcomponentsjs": "^0.7"
+      }
+    }
+  },
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.0"
   }
 }
