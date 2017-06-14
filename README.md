@@ -5,7 +5,7 @@
 
 This component contains [Polymer](https://www.polymer-project.org/1.0/) web component and [Sass](http://sass-lang.com/) variables, either of which can be used to consume the D2L color palette in your application.
 
-For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+For further information on this and other Brightspace UI components, see the docs at [ui.developer.brightspace.com](http://ui.developer.brightspace.com/).
 
 ## Installation
 
@@ -32,11 +32,11 @@ You can then reference the color variables from inside [custom-style](https://ww
 
 ```html
 <head>
-	<style is="custom-style">
+	<custom-style>
 		div {
-			background-color: var(--d2l-color-saphirella);
+			background-color: var(--d2l-color-carnelian);
 		}
-	</style>
+	</custom-style>
 </head>
 ```
 
@@ -52,7 +52,7 @@ Alternatively, you can reference the same variables from Sass:
 @import 'bower_components/d2l-colors/d2l-colors.scss';
 
 div {
-	background-color: $d2l-color-saphirella;
+	background-color: $d2l-color-carnelian;
 }
 ```
 
