@@ -5,7 +5,7 @@
 
 This component contains [Polymer](https://www.polymer-project.org/1.0/) web component and [Sass](http://sass-lang.com/) variables, either of which can be used to consume the D2L color palette in your application.
 
-For further information on this and other Brightspace UI components, see the docs at [ui.developer.brightspace.com](http://ui.developer.brightspace.com/).
+For further information on this and other Brightspace UI components, see the docs at [ui.developers.brightspace.com](http://ui.developers.brightspace.com/).
 
 ## Installation
 
