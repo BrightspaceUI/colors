@@ -26,16 +26,10 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.9.1 || ^2.0.0"
   },
-  "devDependencies": {
-    "d2l-demo-template": "^0.0.12 || ^1.0.0"
-  },
   "variants": {
     "1.x": {
       "dependencies": {
         "polymer": "Polymer/polymer#^1.9.1"
-      },
-      "devDependencies": {
-        "d2l-demo-template": "^0.0.12"
       },
       "resolutions": {
         "webcomponentsjs": "^0.7"
