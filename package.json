@@ -30,7 +30,7 @@
     "eslint": "^3.7.1",
     "eslint-config-brightspace": "^0.2.4",
     "eslint-plugin-html": "^1.5.3",
-    "node-sass": "^3.7.0",
+    "node-sass": "^4.5.3",
     "polymer-cli": "^0.16.0"
   }
 }
