@@ -1,5 +1,5 @@
 # d2l-colors
-
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/BrightspaceUI/colors)
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
@@ -63,6 +63,6 @@ The full list of available color variable names can be found in [d2l-colors.scss
 See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
 [bower-url]: http://bower.io/search/?q=d2l-colors
-[bower-image]: https://img.shields.io/bower/v/d2l-colors.svg
+[bower-image]: https://badge.fury.io/bo/d2l-colors.svg
 [ci-url]: https://travis-ci.org/BrightspaceUI/colors
 [ci-image]: https://travis-ci.org/BrightspaceUI/colors.svg?branch=master
