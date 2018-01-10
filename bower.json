@@ -21,6 +21,7 @@
     ".gitignore",
     ".travis.yml",
     "package.json",
+    "polymer.json",
     "test"
   ],
   "dependencies": {
