@@ -16,7 +16,7 @@
   ],
   "ignore": [
     ".editorconfig",
-    ".eslintrc",
+    ".eslintrc.json",
     ".gitattributes",
     ".gitignore",
     ".travis.yml",
