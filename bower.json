@@ -24,12 +24,12 @@
     "test"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.9.1 || ^2.0.0"
+    "polymer": "1 - 2"
   },
   "variants": {
     "1.x": {
       "dependencies": {
-        "polymer": "Polymer/polymer#^1.9.1"
+        "polymer": "^1.9.1"
       },
       "resolutions": {
         "webcomponentsjs": "^0.7"
