@@ -1,5 +1,7 @@
-<link rel="import" href="../polymer/polymer.html">
-<custom-style>
+import '../@polymer/polymer/polymer-legacy.js';
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<custom-style>
 	<style is="custom-style">
 		html {
 			/* basic grays (lightest to darkest) */
@@ -122,4 +124,6 @@
 
 		}
 	</style>
-</custom-style>
+</custom-style>`;
+
+document.head.appendChild($_documentContainer.content);

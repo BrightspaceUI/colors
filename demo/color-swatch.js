@@ -1,7 +1,9 @@
-<link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="../d2l-colors.html">
-<dom-module id="d2l-demo-color-swatch">
-	<template>
+import '../../@polymer/polymer/polymer-legacy.js';
+import '../d2l-colors.js';
+import { Polymer } from '../../@polymer/polymer/lib/legacy/polymer-fn.js';
+import { html } from '../../@polymer/polymer/lib/utils/html-tag.js';
+Polymer({
+  _template: html`
 		<style>
 			:host {
 				border-radius: 16px;
@@ -337,13 +339,11 @@
 			}
 		</style>
 		<div>[[name]]</div>
-	</template>
-	<script>
-		Polymer({
-			is: 'd2l-demo-color-swatch',
-			properties: {
-				name: String
-			}
-		});
-	</script>
-</dom-module>
+`,
+
+  is: 'd2l-demo-color-swatch',
+
+  properties: {
+	  name: String
+  }
+});
