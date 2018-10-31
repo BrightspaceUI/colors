@@ -1,7 +1,10 @@
-<link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="../d2l-colors.html">
-<dom-module id="d2l-demo-color-swatch">
-	<template strip-whitespace>
+import '../../@polymer/polymer/polymer-legacy.js';
+import '../d2l-colors.js';
+import { Polymer } from '../../@polymer/polymer/lib/legacy/polymer-fn.js';
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
+	<template strip-whitespace="">
 		<style>
 			:host {
 				border-radius: 16px;
@@ -338,12 +341,13 @@
 		</style>
 		<div>[[name]]</div>
 	</template>
-	<script>
-		Polymer({
-			is: 'd2l-demo-color-swatch',
-			properties: {
-				name: String
-			}
-		});
-	</script>
-</dom-module>
+	
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
+Polymer({
+	is: 'd2l-demo-color-swatch',
+	properties: {
+		name: String
+	}
+});

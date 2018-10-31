@@ -1,9 +1,10 @@
 {
+  "npm": true,
     "sources": [
         "*.html"
     ],
     "lint": {
-      "rules": ["polymer-2-hybrid"],
+      "rules": ["polymer-3"],
       "ignoreWarnings": []
     }
 }
