@@ -32,7 +32,7 @@
     "node-sass": "^4.5.0",
     "polymer-cli": "^1.9.1"
   },
-  "version": "",
+  "version": "4.0.1",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
