@@ -3,11 +3,6 @@ node_js: node
 script:
 - npm run test:lint
 - |
-  if [ "$TRAVIS_BRANCH" == "master" ]; then
-    frauci-update-version;
-    export TRAVIS_TAG=$(frauci-get-version)
-  fi
-- |
   if [ "$TRAVIS_BRANCH" == "master" ] && [ $TRAVIS_PULL_REQUEST == false ]; then
     echo "Not a Pull Request and on branch master so bumping version";
     frauci-update-version;
@@ -21,6 +16,5 @@ deploy:
 env:
   global:
   - REPO_NAME=colors
-  - REPO_NAME=colors
   - secure: WngGvEe+xRryPSYtIa4cIi7EQZvg8/tCYCMJeZTBAZk4RaLH65I870/ZjZVBhIlPCd6/g5/HcG9/PCMxCrcuIS2OdhrUFQPyq/EzaEkT7e9whbt0KOvDsK7KcAirpImroaBESxHxlcuWBktoAGus7TxREcYy4qHsIeqyxzSuWPUn0Gl0Oadlyc/TG8PcW8b3VZNKdvLEeT4SZ+OY6kQfN1ItqKDEtBug59A9ukTj7jRXR1xbGZJJRy08WdHAGdr/w+GlswoU+Lh1fFXdB5saor6+NtbTlu9AvVV2msSGtsT0q39wJzZECmrYvm2gHW9z9Br1l39jITHcMFyPPFJozfOQFZNUJCgV7etX2Jl8eyi8IfNwWAQzugxaaf2HT00b2gMToXRM+2kKR+vuPJ9abjpOrUHXY6xwk6pqdWZhPwqCcXhJqKEI837JFllo1qGwcTjwFljWxI5bkaR2j/PVvtoPq88hnRCHoVcyC1p571/a/eaY3Cz6bJNwiTbBxknNn/O4AEOEkuu9c2bcmh2sA7nB4WXGxHuTMLVGbI8K2kxRrXqnLrrSd8sbz/G3oJWoqvul3R1FlOqhHBIDBNUmDnDbgCb/mVPC16xfNQaqeGF/aPUCftQBGkcx78/H8i/DELYQjUfeimtb84bXZByHPizXORx18qi+X8Q+ihorhVw=
-  - secure: Fiun2xM8SznTv5PxEiTdsyPTQ6mSb9lIYQwo9VzS/BkpzpQxV3iJiyy8Fhmq7BZA6jvzytFdyNj+X2Ks4x7+0XK88VwEq6wQvzW2YS8r7JrhMlcSf1n5go+Zz4/KvQfmLybykS+r/vemyZCC1NcjvHzleLJ/4MwnQlILKSSER0n7p2xYo6aOKaq5/OH8+kOwLGnCxv2dVcICE1dTSKx4iHF+j0cJT6Dcv1b+UEDuFILYlklBjBDdn5/SxdhCVCa8Ook1u+m52SwD5yxoonK19N3t1JEMBZFGIoTpoRgVTzxoPC5CKfBw5lE3yAm+R5xqMJR91Nr+lzlcDUAFLw4pKTcCDhaN5+2dmXGpIr/OV9Fm2xkB2/y3OmxBMsYEbDbdofp8wYcJiXAqdu7MYMKFxByvhwvQHdAnXPL6F0pBoJEMjv6iaZBK+VpuVdmrvOFmpmOVErqsTu+sjAaTTAHC87DnKfaQxSGZtFsmk1pnppRexzsAvpI2Z0NRs4GzcZLezq8n0HVZlNDDei/0Yu0l4/oswfC3ZIJfn8cxYj2NzolyFaCuRpjgD8lbH93Tz2Dg+C0wD+4XrBq5RKYfZ7CHXHARn4ZuJL4v6apqlJcCXHGss1TFyLc6eDG2m0dDTuQVPrXNMyQljLw6jspKjfzQY4oXwML51uyRWp1ff/Hiccc=
+  
