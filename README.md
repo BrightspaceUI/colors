@@ -62,11 +62,6 @@ The full list of available color variable names can be found in [d2l-colors.scss
 
 See the [Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
-[bower-url]: http://bower.io/search/?q=d2l-colors
-[bower-image]: https://badge.fury.io/bo/d2l-colors.svg
-[ci-url]: https://travis-ci.org/BrightspaceUI/colors
-[ci-image]: https://travis-ci.org/BrightspaceUI/colors.svg?branch=master
-
 ## Versioning
 
 Commits and PR merges to master will automatically do a minor version bump which will:
@@ -75,3 +70,9 @@ Commits and PR merges to master will automatically do a minor version bump which
 * Create a github release matching the new version
 
 By using either **[increment major]** or **[increment patch]** notation inside your merge message, you can overwrite the default version upgrade of minor to the position of your choice.
+
+[bower-url]: http://bower.io/search/?q=d2l-colors
+[bower-image]: https://badge.fury.io/bo/d2l-colors.svg
+[ci-url]: https://travis-ci.org/BrightspaceUI/colors
+[ci-image]: https://travis-ci.org/BrightspaceUI/colors.svg?branch=master
+
