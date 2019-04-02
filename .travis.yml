@@ -2,3 +2,20 @@ language: node_js
 node_js: node
 script:
 - npm run test:lint
+- |
+  if [ "$TRAVIS_BRANCH" == "master" ] && [ $TRAVIS_PULL_REQUEST == false ]; then
+    echo "Not a Pull Request and on branch master so bumping version";
+    frauci-update-version;
+    export TRAVIS_TAG=$(frauci-get-version)
+  fi
+deploy:
+  provider: releases
+  api_key: "$GITHUB_RELEASE_TOKEN"
+  on:
+    tags: true
+env:
+  global:
+  - OWNER_NAME=BrightspaceUI
+  - REPO_NAME=colors
+  - secure: WngGvEe+xRryPSYtIa4cIi7EQZvg8/tCYCMJeZTBAZk4RaLH65I870/ZjZVBhIlPCd6/g5/HcG9/PCMxCrcuIS2OdhrUFQPyq/EzaEkT7e9whbt0KOvDsK7KcAirpImroaBESxHxlcuWBktoAGus7TxREcYy4qHsIeqyxzSuWPUn0Gl0Oadlyc/TG8PcW8b3VZNKdvLEeT4SZ+OY6kQfN1ItqKDEtBug59A9ukTj7jRXR1xbGZJJRy08WdHAGdr/w+GlswoU+Lh1fFXdB5saor6+NtbTlu9AvVV2msSGtsT0q39wJzZECmrYvm2gHW9z9Br1l39jITHcMFyPPFJozfOQFZNUJCgV7etX2Jl8eyi8IfNwWAQzugxaaf2HT00b2gMToXRM+2kKR+vuPJ9abjpOrUHXY6xwk6pqdWZhPwqCcXhJqKEI837JFllo1qGwcTjwFljWxI5bkaR2j/PVvtoPq88hnRCHoVcyC1p571/a/eaY3Cz6bJNwiTbBxknNn/O4AEOEkuu9c2bcmh2sA7nB4WXGxHuTMLVGbI8K2kxRrXqnLrrSd8sbz/G3oJWoqvul3R1FlOqhHBIDBNUmDnDbgCb/mVPC16xfNQaqeGF/aPUCftQBGkcx78/H8i/DELYQjUfeimtb84bXZByHPizXORx18qi+X8Q+ihorhVw=
+  
