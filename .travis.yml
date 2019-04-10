@@ -3,7 +3,7 @@ node_js: node
 script:
 - npm run test:lint
 - |
-  if [ "$TRAVIS_BRANCH" == "master" ] && [ $TRAVIS_PULL_REQUEST == false ]; then
+  if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_EVENT_TYPE != "cron" ]; then
     echo "Not a Pull Request and on branch master so bumping version";
     frauci-update-version;
     export TRAVIS_TAG=$(frauci-get-version)
