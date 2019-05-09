@@ -40,6 +40,10 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 				background-color: var(--d2l-color-corundum);
 				color: var(--d2l-color-ferrite);
 			}
+			:host([name="chromite"]) {
+				background-color: var(--d2l-color-chromite);
+				color: var(--d2l-color-ferrite);
+			}
 			:host([name="galena"]) {
 				background-color: var(--d2l-color-galena);
 			}
