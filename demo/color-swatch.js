@@ -19,6 +19,24 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 				width: 220px;
 			}
 
+			/* new colors for dark-mode */
+			:host([name="dark-mode-1"]) {
+				background-color: var(--d2l-color-dark-mode-1);
+				color: white;
+			}
+			:host([name="dark-mode-2"]) {
+				background-color: var(--d2l-color-dark-mode-2);
+				color: white;
+			}
+			:host([name="dark-mode-3"]) {
+				background-color: var(--d2l-color-dark-mode-3);
+				color: white;
+			}
+			:host([name="dark-mode-4"]) {
+				background-color: var(--d2l-color-dark-mode-4);
+				color: white;
+			}
+
 			/* basic grays */
 			:host([name="regolith"]) {
 				background-color: var(--d2l-color-regolith);
@@ -345,7 +363,7 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 		</style>
 		<div>[[name]]</div>
 	</template>
-	
+
 </dom-module>`;
 
 document.head.appendChild($_documentContainer.content);

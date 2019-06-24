@@ -4,6 +4,12 @@ const $_documentContainer = document.createElement('template');
 $_documentContainer.innerHTML = `<custom-style>
 	<style is="custom-style">
 		html {
+			/* new colors for dark-mode */
+			--d2l-color-dark-mode-1: #18191a;
+			--d2l-color-dark-mode-2: #262829;
+			--d2l-color-dark-mode-3: #37393b;
+			--d2l-color-dark-mode-4: #5c6163;
+
 			/* basic grays (lightest to darkest) */
 			--d2l-color-regolith: #f9fbff;
 			--d2l-color-sylvite: #f1f5fb;
