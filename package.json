@@ -31,7 +31,6 @@
     "eslint-plugin-html": "^4.0.1",
     "frau-ci": "^1.33.2",
     "node-sass": "^4.5.0",
-    "@polymer/polymer": "^3.0.0",
     "polymer-cli": "^1.9.1"
   },
   "version": "4.4.0",
@@ -43,6 +42,7 @@
   },
   "main": "d2l-colors.js",
   "dependencies": {
-    "@brightspace-ui/core": "^0.2"
+    "@brightspace-ui/core": "^0.2",
+    "@polymer/polymer": "^3.0.0"
   }
 }
