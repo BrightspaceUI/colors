@@ -1,3 +1,5 @@
+> Deprecated: use [BrightspaceUI/core](https://github.com/BrightspaceUI/core) instead.
+
 # d2l-colors
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/BrightspaceUI/colors)
 [![Bower version][bower-image]][bower-url]
@@ -75,4 +77,3 @@ By using either **[increment major]** or **[increment patch]** notation inside y
 [bower-image]: https://badge.fury.io/bo/d2l-colors.svg
 [ci-url]: https://travis-ci.org/BrightspaceUI/colors
 [ci-image]: https://travis-ci.org/BrightspaceUI/colors.svg?branch=master
-
