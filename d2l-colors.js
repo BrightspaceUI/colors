@@ -16,7 +16,6 @@ $_documentContainer.innerHTML = `<custom-style>
 			--d2l-color-panthera: var(--d2l-color-tourmaline-plus-1);
 			--d2l-color-koolaudica: var(--d2l-color-peridot);
 			--d2l-color-deephonica: var(--d2l-color-malachite);
-			--d2l-color-lurite: var(--d2l-color-topaz);
 			--d2l-color-buttonic: linear-gradient(to bottom, var(--d2l-color-regolith) 0%, var(--d2l-color-gypsum) 100%);
 			--d2l-color-meglor: linear-gradient(to bottom, var(--d2l-color-corundum) 0%, var(--d2l-color-tungsten) 100%);
 			--d2l-color-trancition: linear-gradient(to bottom, #fff 0%, var(--d2l-color-regolith) 100%);
@@ -25,7 +24,6 @@ $_documentContainer.innerHTML = `<custom-style>
 			--d2l-color-celestuba: var(--d2l-color-celestine-minus-1);
 			--d2l-color-gravah: var(--d2l-color-amethyst-minus-1);
 			--d2l-color-saphirella: var(--d2l-color-zircon-plus-1);
-			--d2l-color-chartronic: var(--d2l-color-topaz);
 			--d2l-color-celestine-light-1: var(--d2l-color-celestine-plus-2);
 			--d2l-color-celestine-light-2: var(--d2l-color-celestine-plus-1);
 			--d2l-color-olivine-light-1: var(--d2l-color-olivine-plus-1);

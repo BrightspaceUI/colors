@@ -205,22 +205,6 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 				background-color: var(--d2l-color-citrine-minus-2);
 			}
 
-			/* topaz */
-			:host([name="topaz-plus-1"]) {
-				background-color: var(--d2l-color-topaz-plus-1);
-				color: var(--d2l-color-ferrite);
-			}
-			:host([name="topaz"]) {
-				background-color: var(--d2l-color-topaz);
-				color: var(--d2l-color-ferrite);
-			}
-			:host([name="topaz-minus-1"]) {
-				background-color: var(--d2l-color-topaz-minus-1);
-			}
-			:host([name="topaz-minus-2"]) {
-				background-color: var(--d2l-color-topaz-minus-2);
-			}
-
 			/* peridot */
 			:host([name="peridot-plus-1"]) {
 				background-color: var(--d2l-color-peridot-plus-1);
@@ -298,10 +282,6 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 			:host([name="deephonica"]) {
 				background-color: var(--d2l-color-deephonica);
 			}
-			:host([name="lurite"]) {
-				background-color: var(--d2l-color-lurite);
-				color: var(--d2l-color-ferrite);
-			}
 			:host([name="azurite"]) {
 				background-color: var(--d2l-color-azurite);
 			}
@@ -313,10 +293,6 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 			}
 			:host([name="saphirella"]) {
 				background-color: var(--d2l-color-saphirella);
-			}
-			:host([name="chartronic"]) {
-				background-color: var(--d2l-color-chartronic);
-				color: var(--d2l-color-ferrite);
 			}
 			:host([name="celestine-light-1"]) {
 				background-color: var(--d2l-color-celestine-light-1);
@@ -345,7 +321,7 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-demo-color-swatch">
 		</style>
 		<div>[[name]]</div>
 	</template>
-	
+
 </dom-module>`;
 
 document.head.appendChild($_documentContainer.content);
